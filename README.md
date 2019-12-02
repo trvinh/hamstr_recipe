@@ -15,4 +15,4 @@ Install hamstr within a conda env
 conda install -c trvinh hamstr
 setup_hamstr
 ```
-*Note: change trvinh to channel name that hosts hamstr conda package*
+*Note: change `trvinh` to channel name that hosts hamstr conda package*
