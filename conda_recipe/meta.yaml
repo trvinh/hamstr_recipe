@@ -1,5 +1,5 @@
-{% set name = "testPkg" %}
-{% set version = "1.0.7" %}
+{% set name = "HaMStR" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,9 +7,6 @@ package:
 
 source:
   path: ../
-  #folder: my-destination/folder
-  #url: https://sourceforge.net/projects/ngopt/files/a5_miseq_linux_{{ version }}.tar.gz
-  #sha256: 76a2798d617d45f4539e73ef2df5f899503ac4a54c3a406faf37db6282127fe9
 
 build:
   noarch: generic
@@ -49,9 +46,9 @@ requirements:
 
 test:
   commands:
-    - testPkg.pl 2>&1
+    - which setup_hamstr 2>&1
 
 about:
-  home: 'https://sourceforge.net/projects/ngop'
+  home: 'https://github.com/BIONF/HaMStR'
   license: GPLv3
-  summary: "A5-miseq is a pipeline for assembling DNA sequence data generated on the Illumina sequencing platform. This README will take you through the steps necessary for running _A5-miseq_"
+  summary: "Feature-aware phylogenetic profiling tool"
