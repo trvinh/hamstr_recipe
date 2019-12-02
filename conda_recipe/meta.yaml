@@ -1,9 +1,9 @@
 {% set name = "HaMStR" %}
-{% set version = "0.99.1" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
-  version: {{ environ['VERSION'] }}
+  version: {{ version }}
 
 source:
   # path: ../
@@ -13,9 +13,6 @@ source:
 build:
   noarch: generic
   number: 1
-  script_env:
-    - VERSION
-    - CONDA_BLD_PATH
 
 requirements:
   build:
