@@ -38,7 +38,7 @@ echo "done!"
 echo "-------------------------------------"
 echo "Downloading the latest version of HaMStR..."
 
-wget https://github.com/trvinh/HaMStR/archive/master.tar.gz
+wget https://github.com/BIONF/HaMStR/archive/master.tar.gz
 tar xfv master.tar.gz
 mv HaMStR-master HaMStR
 rm master.tar.gz
