@@ -10,10 +10,9 @@ echo "Checking .bash_profile/.bashrc, grep, sed/gsed and wget availability..."
 grepprog='grep'
 sedprog='sed'
 wgetprog='wget'
-bashFile='.bashrc'
 if [ "$sys" == "Darwin" ]; then
     sedprog='gsed'
-    bashFile='.bash_profile'
+    grepprog='ggrep'
 fi
 
 # NOTE: install only available for Linux!
